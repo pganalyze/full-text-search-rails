@@ -1,9 +1,11 @@
 version: "3"
 services:
   db:
-    image: postgres
+    image: "postgres:12"
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=password
   web:

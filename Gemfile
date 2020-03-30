@@ -28,6 +28,13 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Full text searching in postgres
+gem 'pg_search', '~> 2.3', '>= 2.3.2'
+
+gem 'http', '~> 4.4'
+
+gem 'light-service', '~> 0.12.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -40,6 +47,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'prettier'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
