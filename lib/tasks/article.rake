@@ -7,7 +7,7 @@ namespace :article do
       break if result.jobs.empty?
     end
 
-    puts 'Loading HackerNews Page 1'
+    puts 'Loading Hacker News Page 1'
     LoadHackerNewsJobs.call
   end
 end
